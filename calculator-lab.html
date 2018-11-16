@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> Calculator </title>
+<link rel="stylesheet" href="calculator.css">
+<script src="calculator.js"></script>
+</head>
+<body>
+<div>
+<h1>Calculator </h1>
+<form>
+  <input type="text" id="firstNum" value="0">
+  <br>
+  <span class="operation" id="addition" onclick="selectOperation(this)">+</span>
+  <span class="operation" id="multiplication" onclick="selectOperation(this)"> * </span>
+  <br>
+  <span class="operation" id="division" onclick="selectOperation(this)">/</span>
+  <br>
+  <input type="text" id="secondNum" value="0">
+  <br>
+</form>
+<button type="button" onclick="calculate()"> = </button>
+<p id="Result"> Result </p>
+</div>
+<img src=mathboy.png alt="math boy"> <!---Image from Google Images-->
+</body>
+</html>

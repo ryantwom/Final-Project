@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> Hello Ryan </title>
+<link rel="stylesheet" href="to-do-lab.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+<script src="to-do-lab.js"> </script>
+      <!--<link rel="stylesheet" href="calculator.css">-->
+<script src="calculator.js"></script>
+<a class="weatherwidget-io" href="https://forecast7.com/en/42d66n71d14/andover/?unit=us" data-label_1="ANDOVER" data-label_2="WEATHER" data-theme="original" >ANDOVER WEATHER</a>
+<script>
+!function(d,s,id){
+  var js,fjs=d.getElementsByTagName(s)[0];
+
+  if(!d.getElementById(id)){
+
+  js=d.createElement(s);
+  js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';
+  fjs.parentNode.insertBefore(js,fjs);
+  }}
+(document,'script','weatherwidget-io-js');
+</script> <!--https://weatherwidget.io/-->
+
+    <!--0.  Make some of the style a bit nicer by following the instructions in the css file -->
+    <!--1.  USING ICONS
+    We'll want to use a nice "+" icon for adding items to our list, to
+    replace the paragraph that just says "Plus."
+    -Visit the fontawesome website at fontawesome.com
+    -Then go to https://fontawesome.com/how-to-use/on-the-web/setup/getting-started?using=web-fonts-with-css
+    and use the given link tab in your html to link the fontawesome resources to your page.
+    We often use links for external files that we write (like css), but we can also link resources from
+    elsewhere on the web, like fontawesome.
+    -Check out the list of icons https://fontawesome.com/icons?d=gallery and find a nice plus icon.  Put
+    it in the html in the appropriate spot and make sure it shows up.
+    -->
+
+
+    <!-- USING MORE FONTS
+    2. Find a nice font: https://fonts.google.com/
+    Go to "Select this font" and then "family selected" to find the html and css you need to modify in order for <thead>
+    font to show up in your header (or your entire body, if you choose).
+    -->
+<body onLoad="setDate(); setBackground()">
+<div id="whole">
+<header>
+<div>
+<h1> Things To Do </h1>
+</div>
+</header>
+<main>
+<p id="date">Today</p><p id="addItem"><i onclick="addItemPrompt()" class="fas fa-plus-circle"></i></p>
+<table id="toDoList">
+  <tr>
+  <td></td>
+  <td></td>
+  </tr>
+  <tr>
+  <td></td>
+  <td></td>
+  </tr>
+  <tr>
+  <td></td>
+  <td></td>
+  </tr>
+</table>
+</main>
+</div>
+<div id="calculator">
+<h1>Calculator </h1>
+<form>
+  <input type="text" id="firstNum" value="0">
+  <br>
+  <span class="operation" id="addition" onclick="selectOperation(this)">+</span>
+  <span class="operation" id="subtraction" onclick="selectOperation(this)">-</span>
+  <br>
+  <span class="operation" id="multiplication" onclick="selectOperation(this)"> * </span>
+  <span class="operation" id="division" onclick="selectOperation(this)">/</span> <!--Collaborated With Jack Thomsen on Expanding the Amount of Buttons-->
+  <br>
+  <input type="text" id="secondNum" value="0">
+  <br>
+</form>
+<button type="button" onclick="calculate()"> = </button>
+<p id="Result"> Result </p>
+</div>
+<p id="title">Hello Ryan!</p>
+<iframe id="calendar" src="https://calendar.google.com/calendar/embed?src=en.usa%23holiday%40group.v.calendar.google.com&ctz=America%2FNew_York"></iframe> <!--Link From Google Calendars-->
+</body>
+</html>

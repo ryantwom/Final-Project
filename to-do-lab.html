@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> To Do List </title>
+    <link rel="stylesheet" href="to-do-lab.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+      <script src="to-do-lab.js"> </script>
+    <!--0.  Make some of the style a bit nicer by following the instructions in the css file -->
+    <!--1.  USING ICONS
+    We'll want to use a nice "+" icon for adding items to our list, to
+    replace the paragraph that just says "Plus."
+    -Visit the fontawesome website at fontawesome.com
+    -Then go to https://fontawesome.com/how-to-use/on-the-web/setup/getting-started?using=web-fonts-with-css
+    and use the given link tab in your html to link the fontawesome resources to your page.
+    We often use links for external files that we write (like css), but we can also link resources from
+    elsewhere on the web, like fontawesome.
+    -Check out the list of icons https://fontawesome.com/icons?d=gallery and find a nice plus icon.  Put
+    it in the html in the appropriate spot and make sure it shows up.
+    -->
+
+
+    <!-- USING MORE FONTS
+    2. Find a nice font: https://fonts.google.com/
+    Go to "Select this font" and then "family selected" to find the html and css you need to modify in order for <thead>
+    font to show up in your header (or your entire body, if you choose).
+    -->
+  </head>
+  <body onLoad="setDate()">
+    <header>
+    <div>
+      <h1> Things To Do </h1>
+    </div>
+    </header>
+    <main>
+    <p id="date">Today</p><p id="addItem"><i onclick="addItemPrompt()" class="fas fa-plus-circle"></i></p>
+    <table id="toDoList">
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+  </main>
+  </body>
+</html>
